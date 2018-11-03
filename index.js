@@ -16,10 +16,10 @@ function setThisWithApply(fn, thisValue, args) {
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
   
   function copy(thisValue) {
-     functionToBeCopied(thisValue);
+     this.value=functionToBeCopied(thisValue);
 
   }
-  return (copy, copy.value);
+  return copy;
 
   
 }
