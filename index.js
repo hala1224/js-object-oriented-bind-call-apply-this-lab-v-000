@@ -17,7 +17,7 @@ function returnNewFunctionOf(functionToBeCopied, thisValue) {
   
   function copy(thisValue) {
      this.thisValue =functionToBeCopied(thisValue);
-
+     debugger
  }
   return copy;
 
