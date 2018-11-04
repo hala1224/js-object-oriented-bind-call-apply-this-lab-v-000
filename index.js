@@ -19,7 +19,7 @@ function returnNewFunctionOf(functionToBeCopied, thisValue) {
      this.thisValue =functionToBeCopied(thisValue);
 
  }
-  return copy;
+  return copy();
 
   
 }
